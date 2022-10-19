@@ -6,9 +6,12 @@ body {
     direction: rtl;
     text-align: right;
     box-sizing: border-box;
-    font-family: 'Tajawal', sans-serif;
+    font-family: "Tajawal", sans-serif;
 }
-
+ul {
+    margin: 0;
+    padding: 0;
+}
 
 
 /* General */
@@ -74,11 +77,13 @@ body {
 .news {
     background-color: #ececec;
 }
-.news-item {
+.news-item,
+.footer-left {
     display: flex;
     align-items: center;
 }
-.news-item img {
+.news-item img,
+.footer-left img {
     max-width: 200px;
     margin-left: 10px;
 }
@@ -109,4 +114,38 @@ body {
 }
 .sub form button {
     width: 15%;
+}
+@media (max-width: 768px) {
+    .sub .text {
+      width: 80%;
+    }
+    .sub .text form {
+      flex-direction: column;
+    }
+    .sub .text form input,
+    .sub .text button {
+      width: 100%;
+    }
+}
+footer {
+    background-color: #071c33;
+    color: #fff;
+    }
+
+footer h3 {
+    background: #fff;
+    color: #222;
+    display: inline-block;
+    font-size: 16px;
+    margin: 0 0 10px;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    }
+
+.footer-left {
+    font-size: 12px;
+}
+
+.footer-left img {
+    width: 50px;
 }
